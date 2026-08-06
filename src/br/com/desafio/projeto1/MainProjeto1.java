@@ -8,7 +8,7 @@ public class MainProjeto1 {
             Scanner scan = new Scanner(System.in);
             //objeto do tipo Caixa de livros
             CaixaDeLivros caixa1 = new CaixaDeLivros();
-            //atributos para o menu
+            //variáveis do menu
             int opcao;
             String nome;
             String autor;

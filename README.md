@@ -17,6 +17,11 @@ Não existe a possibilidade de tentar tirar o livro de uma caixa vazia, ou seja 
 - Projeto 2: Sistema de Cobrança
 ## O que faz:
 
+Projeto com a intenção de criar a interação de uma compra através de um sistema de venda, com opções para cartão, avista e pix.
+
+## Regras de negócio
+
+Se a forma de pagamento selecionada for PIX, o sistema aplica um desconto de 10% a compra. Todavia se a mesma for no cartão, existe uma taxa ao parcelamento, já no dinheiro está isento de taxas e descontos.
 
 - Projeto 3: Caixa da Livraria
 ## O que faz:
