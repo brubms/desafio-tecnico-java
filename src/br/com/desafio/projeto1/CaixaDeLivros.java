@@ -1,3 +1,5 @@
+package br.com.desafio.projeto1;
+
 import java.util.Stack;
 
 public class CaixaDeLivros {
@@ -24,6 +26,9 @@ public class CaixaDeLivros {
     //verificar se está vazio
     public boolean isEmpty(){
         return this.pilha.isEmpty();
+    }
+    public Stack<Livro> getPilha(){
+        return pilha;
     }
 
 

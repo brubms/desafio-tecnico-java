@@ -25,3 +25,9 @@ Se a forma de pagamento selecionada for PIX, o sistema aplica um desconto de 10%
 
 - Projeto 3: Caixa da Livraria
 ## O que faz:
+
+União dos dois projetos 1 e 2, através de implementações de interfaces para gerar recibo, onde o usuário consegue gerar uma compra, cadastrando os livros que o cliente pediu, podendo até tirar os livros de cima da caixa, se caso o cliente não quiser comprar. Portanto para concluir a compra, após a seleção dos livros, seleciona então o método de pagamento, podendo ser PIX, crédito parcelado e à vista.
+
+## Regras de negócio
+
+tratar as exceções com try/cacth, utilizar o FileWriter ou BufferedWriter para gerar o recibo e integrar ambos projetos em um só. 

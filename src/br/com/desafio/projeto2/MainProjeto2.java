@@ -8,16 +8,32 @@ public class MainProjeto2 {
         //entrada do teclado para teste
         Scanner scan = new Scanner(System.in);
         //variáveis: 
-        double valor;
-        int menu;
+        double valor = 0 ;
+        int menu = 0;
         double resultado;
         double resultadoParcelado = 0;
         int parcelas;
+        boolean valorValido = false;
+        
         //loop para manter o menu sempre ativo até finalizar a compra
         do{
         System.out.println("===========CAIXA===========");
+
+        while(!valorValido)//<-- loop para validar o valor até que seja maior que 0 e então seguir para a opção de pagamento.
+        try{// tenta fazer a questão do valor!
         System.out.println("Digite o valor da compra: R$");
-        valor = scan.nextDouble(); // armazena o valor da compra 
+        valor = Double.parseDouble(scan.nextLine()); // armazena o valor da compra 
+        if(valor <= 0 ){// condição onde se o usuário deigitar 0 ou menos que 0, recebe uma mensagem amigável!
+            System.out.println("Valor deve ser maior que zero!");//
+        }else{//altera o valor da varável para true onde ecerra o while
+            valorValido = true;
+        }
+
+            }catch(NumberFormatException e){// caso o usuário digite alguma letra, recebe uma mensagem amigável!
+            System.out.println("Digite apenas números !");
+            continue;
+        }
+
         //questiona quanto qual a forma de pagamento
         System.out.println("Selecione a forma pagamento:");
         System.out.println("1. Pix");
@@ -67,10 +83,18 @@ public class MainProjeto2 {
                 break;
         }
 
+    
     }while(menu!=0);// ao ser digitado o 0 em alguma das operações é finalizada a compra
          System.out.println("Compra finalizada");
 
-        scan.close();
+       scan.close();
+
+        
+            
+    
+     
     }
+
+
 
 }
